@@ -12,6 +12,9 @@ public class TestThread {
                         e.printStackTrace();
                     }
                     System.out.printf("已经玩了LOL %d 秒%n", seconds++);
+                    for (int i = 0; i < 10; i++) {
+                        System.out.println("");
+                    }
                 }
             }
         };
