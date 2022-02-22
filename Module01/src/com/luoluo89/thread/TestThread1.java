@@ -1,6 +1,6 @@
-package com.luoluo89;
+package com.luoluo89.thread;
 
-public class TestThread {
+public class TestThread1 {
     public static void main(String[] args) {
         Thread t1= new Thread(){
             public void run(){
