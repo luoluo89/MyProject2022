@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0fb564c-5ae0-436d-bbcb-a0d9f14ca9bf" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/Module01.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject202201.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module01/com/luoluo89/TestThread$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Module01/com/luoluo89/TestThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/Hero2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/Hero2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread4.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module01/com/luoluo89/TestThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module01/com/luoluo89/TestThread.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,9 @@
     </option>
   </component>
   <component name="ProjectId" id="25Ou7zk1zgUE6URukrVpHHF3yJr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -51,15 +55,67 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager">
-    <configuration name="TestThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoluo89.TestThread" />
+  <component name="RunManager" selected="Application.TestThread8">
+    <configuration name="TestThread1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread1" />
       <module name="Module01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luoluo89.*" />
+          <option name="PATTERN" value="com.luoluo89.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThread5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread5" />
+      <module name="Module01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoluo89.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThread6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread6" />
+      <module name="Module01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoluo89.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThread7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread7" />
+      <module name="Module01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoluo89.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThread8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread8" />
+      <module name="Module01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoluo89.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,7 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestThread" />
+        <item itemvalue="Application.TestThread8" />
+        <item itemvalue="Application.TestThread1" />
+        <item itemvalue="Application.TestThread7" />
+        <item itemvalue="Application.TestThread6" />
+        <item itemvalue="Application.TestThread5" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +157,8 @@
       <updated>1645410290654</updated>
       <workItem from="1645410294758" duration="36000" />
       <workItem from="1645410403392" duration="782000" />
-      <workItem from="1645411226971" duration="4584000" />
+      <workItem from="1645411226971" duration="7825000" />
+      <workItem from="1645493028978" duration="17965000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1645434034151</created>
@@ -106,18 +167,53 @@
       <option name="project" value="LOCAL" />
       <updated>1645434034152</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1645434315873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645434315873</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1645438582752</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645438582752</updated>
+    </task>
+    <task id="LOCAL-00004" summary="20220222">
+      <created>1645515847746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645515847746</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="E:/GitHub/MyProject2022" />
     </ignored-roots>
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="20220222" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220222" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="26" key="#Notifications" timestamp="1645433356730">
@@ -128,38 +224,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1645433253921" />
-    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1645434032393">
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1645501436346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1645434032393" />
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1645501436346" />
+    <state x="413" y="114" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1645513468659">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="114" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1645513468659" />
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1645519372920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1645519372920" />
     <state x="515" y="122" key="FileChooserDialogImpl" timestamp="1645433120798">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="515" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1645433120798" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1645434138196">
+    <state width="1323" height="356" key="GridCell.Tab.0.bottom" timestamp="1645526273404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1645434138196" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1645434138195">
+    <state width="1323" height="356" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1645526273404" />
+    <state width="1323" height="356" key="GridCell.Tab.0.center" timestamp="1645526273404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1645434138195" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1645434138195">
+    <state width="1323" height="356" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1645526273404" />
+    <state width="1323" height="356" key="GridCell.Tab.0.left" timestamp="1645526273403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1645434138195" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1645434138195">
+    <state width="1323" height="356" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1645526273403" />
+    <state width="1323" height="356" key="GridCell.Tab.0.right" timestamp="1645526273404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1645434138195" />
-    <state x="252" y="6" key="SettingsEditor" timestamp="1645433140324">
+    <state width="1323" height="356" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1645526273404" />
+    <state x="252" y="6" key="SettingsEditor" timestamp="1645524986976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="252" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1645433140324" />
+    <state x="252" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1645524986976" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1645520029213">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1645520029213" />
     <state x="375" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1645410296959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="375" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1645410296959" />
+    <state x="505" y="243" key="git4idea.rebase.GitRebaseDialog" timestamp="1645519940586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="505" y="243" key="git4idea.rebase.GitRebaseDialog/0.0.1366.728@0.0.1366.728" timestamp="1645519940586" />
     <state x="57" y="0" key="new project wizard" timestamp="1645410602024">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,5 +1,8 @@
 package com.luoluo89.thread;
 
+/**
+ * 波动拳2
+ */
 public class TestThread5 {
     public String name;
     public float hp;

@@ -1,5 +1,8 @@
 package com.luoluo89.thread;
 
+/**
+ *
+ */
 public class TestThread1 {
     public static void main(String[] args) {
         Thread t1= new Thread(){
@@ -12,9 +15,9 @@ public class TestThread1 {
                         e.printStackTrace();
                     }
                     System.out.printf("已经玩了LOL %d 秒%n", seconds++);
-                    for (int i = 0; i < 10; i++) {
+                    /*for (int i = 0; i < 10; i++) {
                         System.out.println("");
-                    }
+                    }*/
                 }
             }
         };
