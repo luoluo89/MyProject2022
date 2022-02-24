@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0fb564c-5ae0-436d-bbcb-a0d9f14ca9bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/consumer/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/consumer/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/consumer/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/consumer/TestThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/MyStackLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/TestThread15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/TestThread16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/TestThrerad17.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread8.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/thread/TestThread8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.luoluo89.lock" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.TestThread">
     <configuration name="TestThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -63,32 +63,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.luoluo89.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestThread1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread1" />
-      <module name="Module01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoluo89.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestThread10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread10" />
-      <module name="Module01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoluo89.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +83,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestThread8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoluo89.thread.TestThread8" />
+    <configuration name="TestThread15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.lock.TestThread15" />
       <module name="Module01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luoluo89.thread.*" />
+          <option name="PATTERN" value="com.luoluo89.lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThread16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.lock.TestThread16" />
+      <module name="Module01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoluo89.lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThrerad17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoluo89.lock.TestThrerad17" />
+      <module name="Module01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoluo89.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,10 +125,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestThread" />
+        <item itemvalue="Application.TestThrerad17" />
+        <item itemvalue="Application.TestThread16" />
+        <item itemvalue="Application.TestThread15" />
         <item itemvalue="Application.TestThread11" />
-        <item itemvalue="Application.TestThread10" />
-        <item itemvalue="Application.TestThread8" />
-        <item itemvalue="Application.TestThread1" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +158,8 @@
       <workItem from="1645410403392" duration="782000" />
       <workItem from="1645411226971" duration="7825000" />
       <workItem from="1645493028978" duration="18471000" />
-      <workItem from="1645578459217" duration="15058000" />
+      <workItem from="1645578459217" duration="16232000" />
+      <workItem from="1645661585915" duration="7620000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1645434034151</created>
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645526635266</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="20220223">
+      <created>1645611407514</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645611407514</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +228,8 @@
     </ignored-roots>
     <MESSAGE value="test" />
     <MESSAGE value="20220222" />
-    <option name="LAST_COMMIT_MESSAGE" value="20220222" />
+    <MESSAGE value="20220223" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220223" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="26" key="#Notifications" timestamp="1645433356730">
@@ -240,50 +249,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="114" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1645513468659" />
-    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1645526633601">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1645611405762">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1645526633601" />
+    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1645611405762" />
     <state x="515" y="122" key="FileChooserDialogImpl" timestamp="1645433120798">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="515" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1645433120798" />
-    <state width="1877" height="331" key="GridCell.Tab.0.bottom" timestamp="1645609774860">
+    <state width="1877" height="644" key="GridCell.Tab.0.bottom" timestamp="1645669774729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1645599747449" />
-    <state width="1877" height="331" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1645609774860" />
-    <state width="1877" height="331" key="GridCell.Tab.0.center" timestamp="1645609774859">
+    <state width="1877" height="644" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1645669774729" />
+    <state width="1877" height="644" key="GridCell.Tab.0.center" timestamp="1645669774729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1645599747449" />
-    <state width="1877" height="331" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1645609774859" />
-    <state width="1877" height="331" key="GridCell.Tab.0.left" timestamp="1645609774859">
+    <state width="1877" height="644" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1645669774729" />
+    <state width="1877" height="644" key="GridCell.Tab.0.left" timestamp="1645669774729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1645599747448" />
-    <state width="1877" height="331" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1645609774859" />
-    <state width="1877" height="331" key="GridCell.Tab.0.right" timestamp="1645609774860">
+    <state width="1877" height="644" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1645669774729" />
+    <state width="1877" height="644" key="GridCell.Tab.0.right" timestamp="1645669774729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1645599747449" />
-    <state width="1877" height="331" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1645609774860" />
-    <state x="252" y="6" key="SettingsEditor" timestamp="1645578501084">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="644" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1645669774729" />
+    <state x="352" y="160" key="SettingsEditor" timestamp="1645668944763">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="252" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1645578501084" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1645527125621">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="352" y="160" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1645668944763" />
+    <state x="387" y="143" key="Vcs.Push.Dialog.v2" timestamp="1645612469418">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1645527125621" />
+    <state x="387" y="143" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1645612469418" />
     <state x="375" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1645410296959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="375" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1645410296959" />
-    <state x="379" y="166" key="git4idea.merge.GitPullDialog" timestamp="1645579663538">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="533" y="237" key="git4idea.merge.GitPullDialog" timestamp="1645663056695">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="379" y="166" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1645579663538" />
+    <state x="533" y="237" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1645663056695" />
     <state x="505" y="243" key="git4idea.rebase.GitRebaseDialog" timestamp="1645519940586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -296,5 +309,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1645580212200" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1645666576948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1645666576948" />
   </component>
 </project>
