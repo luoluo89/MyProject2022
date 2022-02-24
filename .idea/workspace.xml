@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0fb564c-5ae0-436d-bbcb-a0d9f14ca9bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/MyStackLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/TestThread15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/TestThread16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/src/com/luoluo89/lock/TestThrerad17.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +155,7 @@
       <workItem from="1645411226971" duration="7825000" />
       <workItem from="1645493028978" duration="18471000" />
       <workItem from="1645578459217" duration="16232000" />
-      <workItem from="1645661585915" duration="7620000" />
+      <workItem from="1645661585915" duration="8452000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1645434034151</created>
@@ -203,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645611407514</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="20220224">
+      <created>1645670683738</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645670683738</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +232,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="20220222" />
     <MESSAGE value="20220223" />
-    <option name="LAST_COMMIT_MESSAGE" value="20220223" />
+    <MESSAGE value="20220224" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220224" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="26" key="#Notifications" timestamp="1645433356730">
@@ -249,11 +253,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="114" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1645513468659" />
-    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1645611405762">
+    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1645670681819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1645526633601" />
-    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1645611405762" />
+    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1645670681819" />
     <state x="515" y="122" key="FileChooserDialogImpl" timestamp="1645433120798">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -283,11 +287,11 @@
     </state>
     <state x="252" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1645578501084" />
     <state x="352" y="160" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1645668944763" />
-    <state x="387" y="143" key="Vcs.Push.Dialog.v2" timestamp="1645612469418">
+    <state x="387" y="143" key="Vcs.Push.Dialog.v2" timestamp="1645670749880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1645527125621" />
-    <state x="387" y="143" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1645612469418" />
+    <state x="387" y="143" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1645670749880" />
     <state x="375" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1645410296959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
