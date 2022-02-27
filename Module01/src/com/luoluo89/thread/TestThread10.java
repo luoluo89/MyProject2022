@@ -5,11 +5,11 @@ package com.luoluo89.thread;
  */
 public class TestThread10 {
     public static void main(String[] args) {
-        final Hero ahri = new Hero();
+        final Hero1 ahri = new Hero1();
         ahri.name = "鸣人";
-        final Hero annie = new Hero();
+        final Hero1 annie = new Hero1();
         annie.name = "小樱";
-        final Hero sasiki = new Hero();
+        final Hero1 sasiki = new Hero1();
         annie.name = "佐助";
 
         Thread t1 = new Thread(){

@@ -6,7 +6,7 @@ package com.luoluo89.thread;
 public class TestThread11 {
     public static void main(String[] args) {
 
-        final Hero gareen = new Hero();
+        final Hero1 gareen = new Hero1();
         gareen.name = "盖伦";
         gareen.hp = 666;
         Thread t1 = new Thread(){

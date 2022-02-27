@@ -1,11 +1,12 @@
 package com.luoluo89.thread;
 
-public class Hero {
+public class Hero1 {
+    public int id;
     public String name;
     public float hp;
     public int damage;
 
-    public synchronized void attackHero(Hero h) {
+    public synchronized void attackHero(Hero1 h) {
         try {
             //为了表示攻击需要时间，每次攻击暂停1000毫秒
             Thread.sleep(1000);
@@ -47,4 +48,38 @@ public class Hero {
         hp = hp - 1;
         System.out.printf("%s 减血1点,减少血后，%s的血量是%.0f%n", name, name, hp);
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getHp() {
+        return hp;
+    }
+
+    public void setHp(float hp) {
+        this.hp = hp;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
 }
+
+

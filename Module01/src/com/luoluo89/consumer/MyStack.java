@@ -19,7 +19,7 @@ public class MyStack<T> {
             }
         }
         T t = linkedList.poll();
-        System.out.println("出栈：" + t.toString());
+//        System.out.println("出栈：" + t.toString());
         return t;
     }
     //进栈
@@ -32,6 +32,7 @@ public class MyStack<T> {
             }
         }
         linkedList.add(t);
-        System.out.println("进栈：" + t.toString());
+//        System.out.println("进栈：" + t.toString());
+        this.notify();
     }
 }

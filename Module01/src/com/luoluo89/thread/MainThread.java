@@ -6,22 +6,22 @@ package com.luoluo89.thread;
 public class MainThread {
     public static void main(String[] args) {
 
-        final Hero gareen = new Hero();
+        final Hero1 gareen = new Hero1();
         gareen.name = "盖伦";
         gareen.hp = 616;
         gareen.damage = 50;
 
-        final Hero teemo = new Hero();
+        final Hero1 teemo = new Hero1();
         teemo.name = "提莫";
         teemo.hp = 300;
         teemo.damage = 30;
 
-        final Hero bh = new Hero();
+        final Hero1 bh = new Hero1();
         bh.name = "赏金猎人";
         bh.hp = 500;
         bh.damage = 65;
 
-        final Hero leesin = new Hero();
+        final Hero1 leesin = new Hero1();
         leesin.name = "盲僧";
         leesin.hp = 455;
         leesin.damage = 80;
