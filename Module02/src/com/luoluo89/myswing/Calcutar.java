@@ -1,4 +1,4 @@
-package com.luoluo89;
+package com.luoluo89.myswing;
 
 import javax.swing.*;
 import java.awt.*;
