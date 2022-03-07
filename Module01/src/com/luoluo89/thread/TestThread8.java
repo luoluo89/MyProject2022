@@ -4,7 +4,7 @@ public class TestThread8 {
     public static void main(String[] args) throws InterruptedException {
 
         final Object someObject = new Object();
-        final Hero gareen = new Hero();
+        final Hero1 gareen = new Hero1();
         gareen.name = "盖伦";
         gareen.hp = 10000;
         int n = 10000;

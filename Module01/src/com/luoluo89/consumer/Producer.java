@@ -1,27 +1,27 @@
 package com.luoluo89.consumer;
 
-public class Producer extends Thread {
-    private MyStack<Character> stack;
+import java.util.Date;
 
-    public Producer(MyStack<Character> stack){
+public class Producer extends Thread {
+    private String name;
+    private MyStack<Long> stack;
+
+    public Producer(String name, MyStack<Long> stack){
+        this.name = name;
         this.stack = stack;
     }
 
     @Override
     public void run() {
         while (true){
-            this.stack.push(randomChar());
-            System.out.println("stack" + stack);
+            long c = ProduceUtil.produce();
+            this.stack.push(c);
+            System.out.println(name + "生产了：" + c);
             try {
-                Thread.sleep(100);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-    }
-
-
-    public char randomChar(){
-        return (char) (Math.random()*('Z'+1-'A') + 'A');
     }
 }

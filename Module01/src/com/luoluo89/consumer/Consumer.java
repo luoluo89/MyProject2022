@@ -4,17 +4,19 @@ package com.luoluo89.consumer;
  * 消费者
  */
 public class Consumer extends Thread {
-    private MyStack<Character> stack;
+    private String name;
+    private MyStack<Long> stack;
 
-    public Consumer(MyStack<Character> stack){
+    public Consumer(String name, MyStack<Long> stack){
+        this.name = name;
         this.stack = stack;
     }
 
     @Override
     public void run() {
         while (true){
-            Character stack = this.stack.poll();
-            System.out.println("stack" + stack);
+            Long ca = this.stack.poll();
+            System.out.println(name + "消费了：" + ca);
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
