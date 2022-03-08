@@ -1,5 +1,6 @@
 package com.luoluo89.hutubill.panel;
 
+import com.luoluo89.hutubill.listener.RecoverListener;
 import com.luoluo89.hutubill.util.ColorUtil;
 import com.luoluo89.hutubill.util.GUIUtil;
 
@@ -17,6 +18,7 @@ public class RecoverPanel extends JPanel {
  
         GUIUtil.setColor(ColorUtil.blueColor, bRecover);
         this.add(bRecover);
+        bRecover.addActionListener(new RecoverListener());
          
     }
  

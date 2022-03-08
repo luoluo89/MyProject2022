@@ -5,9 +5,9 @@ package com.luoluo89.hutubill.entity;
  */
 public class Category {
 
-    public int id;
-    public String name;
-    public int recordNumber;
+    private int id;
+    private String name;
+    private int recordNumber;
 
     public int getId() {
         return id;

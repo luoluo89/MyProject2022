@@ -1,6 +1,8 @@
 package com.luoluo89.hutubill.panel;
 
+import com.luoluo89.hutubill.dao.ConfigDAO;
 import com.luoluo89.hutubill.listener.ConfigListener;
+import com.luoluo89.hutubill.service.ConfigService;
 import com.luoluo89.hutubill.util.ColorUtil;
 import com.luoluo89.hutubill.util.GUIUtil;
 
@@ -12,7 +14,7 @@ public class ConfigPanel extends JPanel {
         GUIUtil.useLNF();
     }
     public static ConfigPanel instance = new ConfigPanel();
- 
+
     JLabel lBudget = new JLabel("本月预算(￥)");
     public JTextField tfBudget = new JTextField("0");
      
@@ -41,7 +43,11 @@ public class ConfigPanel extends JPanel {
         this.add(pSubmit,BorderLayout.CENTER);
 
         bSubmit.addActionListener(new ConfigListener());
-         
+
+        //从数据库读出
+        tfBudget.setText(ConfigService.configBudget.getValue());
+        tfMysqlPath.setText(ConfigService.configMysqlPath.getValue());
+
     }
  
     public static void main(String[] args) {

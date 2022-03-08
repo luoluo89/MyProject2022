@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
-public class BackupListener implements ActionListener {
+public class RecoverListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         String mysqlpath = ConfigPanel.instance.tfMysqlPath.getText();
@@ -19,19 +19,12 @@ public class BackupListener implements ActionListener {
             return;
         }
         JFileChooser fc = new JFileChooser();
-        int returnVal =  fc.showSaveDialog(ConfigPanel.instance);
+        int returnVal =  fc.showOpenDialog(ConfigPanel.instance);
         File file = fc.getSelectedFile();
-        if(!file.getName().toLowerCase().endsWith(".sql"))
-            file = new File(file.getParent(),file.getName()+".sql");
         if (returnVal == JFileChooser.APPROVE_OPTION) {
-            JOptionPane.showMessageDialog(ConfigPanel.instance, "计划保存到文件:" + file.getAbsolutePath());
-            try {
-                MysqlUtil.backup(mysqlpath,file.getAbsolutePath());
-                JOptionPane.showMessageDialog(ConfigPanel.instance, "备份成功！");
-            } catch (IOException ex) {
-                ex.printStackTrace();
-                System.out.println("backup error");
-            }
+            JOptionPane.showMessageDialog(ConfigPanel.instance, "计划从:" + file.getAbsolutePath() + "文件恢复。");
+            MysqlUtil.recover(mysqlpath,file.getAbsolutePath());
+            JOptionPane.showMessageDialog(ConfigPanel.instance, "恢复成功！");
         }
     }
 }
