@@ -4,6 +4,7 @@ import com.luoluo89.hutubill.dao.ConfigDAO;
 import com.luoluo89.hutubill.listener.ConfigListener;
 import com.luoluo89.hutubill.service.ConfigService;
 import com.luoluo89.hutubill.util.ColorUtil;
+import com.luoluo89.hutubill.util.DBUtil;
 import com.luoluo89.hutubill.util.GUIUtil;
 
 import javax.swing.*;
@@ -20,11 +21,17 @@ public class ConfigPanel extends JPanel {
      
     JLabel lMysql = new JLabel("Mysql安装目录");
     public JTextField tfMysqlPath = new JTextField("");
+
+    JLabel luser = new JLabel("Mysql用户名");
+    public JTextField tfUser = new JTextField(DBUtil.loginName);
+
+    JLabel lpasswd = new JLabel("Mysql密码");
+    public JTextField tfPasswd = new JTextField(DBUtil.password);
  
     JButton bSubmit = new JButton("更新");
  
     public ConfigPanel() {
-        GUIUtil.setColor(ColorUtil.grayColor, lBudget,lMysql);
+        GUIUtil.setColor(ColorUtil.grayColor, lBudget,lMysql,luser,lpasswd);
         GUIUtil.setColor(ColorUtil.blueColor, bSubmit);
          
         JPanel pInput =new JPanel();
@@ -36,6 +43,10 @@ public class ConfigPanel extends JPanel {
         pInput.add(tfBudget);
         pInput.add(lMysql);
         pInput.add(tfMysqlPath);
+        pInput.add(luser);
+        pInput.add(tfUser);
+        pInput.add(lpasswd);
+        pInput.add(tfPasswd);
         this.setLayout(new BorderLayout());
         this.add(pInput,BorderLayout.NORTH);
          

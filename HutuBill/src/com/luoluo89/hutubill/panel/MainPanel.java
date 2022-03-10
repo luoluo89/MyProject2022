@@ -15,6 +15,7 @@ public class MainPanel extends JPanel {
     public JToolBar tb = new JToolBar();
     public JButton bSpend = new JButton();
     public JButton bRecord = new JButton();
+    public JButton bRecord_history = new JButton();
     public JButton bCategory = new JButton();
     public JButton bReport = new JButton();
     public JButton bConfig = new JButton();
@@ -27,6 +28,7 @@ public class MainPanel extends JPanel {
  
         GUIUtil.setImageIcon(bSpend, "home.png", "消费一览");
         GUIUtil.setImageIcon(bRecord, "record.png", "记一笔");
+        GUIUtil.setImageIcon(bRecord_history, "record_history.png", "消费记录");
         GUIUtil.setImageIcon(bCategory, "category2.png", "消费分类");
         GUIUtil.setImageIcon(bReport, "report.png", "月消费报表");
         GUIUtil.setImageIcon(bConfig, "config.png", "设置");
@@ -35,6 +37,7 @@ public class MainPanel extends JPanel {
  
         tb.add(bSpend);
         tb.add(bRecord);
+        tb.add(bRecord_history);
         tb.add(bCategory);
         tb.add(bReport);
         tb.add(bConfig);
@@ -59,6 +62,7 @@ public class MainPanel extends JPanel {
 
         bSpend.addActionListener(listener);
         bRecord.addActionListener(listener);
+        bRecord_history.addActionListener(listener);
         bCategory.addActionListener(listener);
         bReport.addActionListener(listener);
         bConfig.addActionListener(listener);

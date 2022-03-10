@@ -1,5 +1,6 @@
 package com.luoluo89.hutubill.test;
 
+import com.luoluo89.hutubill.entity.Category;
 import com.luoluo89.hutubill.model.CategoryComboBoxModel;
 import com.luoluo89.hutubill.panel.CenterPanel;
 import com.luoluo89.hutubill.util.GUIUtil;
@@ -61,7 +62,7 @@ public class TestRecordPanel {
         JLabel lDate = new JLabel("日期");
         JTextField tfSpend = new JTextField("0");
         CategoryComboBoxModel cbModel = new CategoryComboBoxModel();
-        JComboBox<String> cbCategory = new JComboBox<>(cbModel);
+        JComboBox<Category> cbCategory = new JComboBox<>(cbModel);
         JTextField tfComment = new JTextField();
         JXDatePicker datepick = new JXDatePicker(new Date());
         jPanelup.add(lSpend);

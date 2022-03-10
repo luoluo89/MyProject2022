@@ -1,12 +1,19 @@
 package com.luoluo89.hutubill.panel;
 
+import com.luoluo89.hutubill.entity.Category;
+import com.luoluo89.hutubill.listener.RecordListener;
 import com.luoluo89.hutubill.model.CategoryComboBoxModel;
+import com.luoluo89.hutubill.service.CategoryService;
 import com.luoluo89.hutubill.util.ColorUtil;
 import com.luoluo89.hutubill.util.GUIUtil;
 import org.jdesktop.swingx.JXDatePicker;
 
 import javax.swing.*;
 import java.awt.*;
+import java.text.DateFormat;
+import java.text.FieldPosition;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class RecordPanel extends JPanel {
@@ -23,17 +30,16 @@ public class RecordPanel extends JPanel {
     public JTextField tfSpend = new JTextField("0");
 
     public CategoryComboBoxModel cbModel = new CategoryComboBoxModel();
-    public JComboBox<String> cbCategory = new JComboBox<>(cbModel);
+    public JComboBox<Category> cbCategory = new JComboBox<>(cbModel);
     public JTextField tfComment = new JTextField();
     public JXDatePicker datepick = new JXDatePicker(new Date());
-
+    public JPanel pInput =new JPanel();
+    public JPanel pSubmit = new JPanel();
     JButton bSubmit = new JButton("记一笔");
 
     public RecordPanel() {
         GUIUtil.setColor(ColorUtil.grayColor, lSpend,lCategory,lComment,lDate);
         GUIUtil.setColor(ColorUtil.blueColor, bSubmit);
-        JPanel pInput =new JPanel();
-        JPanel pSubmit = new JPanel();
         int gap = 40;
         pInput.setLayout(new GridLayout(4,2,gap,gap));
 
@@ -44,6 +50,8 @@ public class RecordPanel extends JPanel {
         pInput.add(lComment);
         pInput.add(tfComment);
         pInput.add(lDate);
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+        datepick.setFormats(sf);
         pInput.add(datepick);
 
         pSubmit.add(bSubmit);
@@ -51,6 +59,14 @@ public class RecordPanel extends JPanel {
         this.setLayout(new BorderLayout());
         this.add(pInput,BorderLayout.NORTH);
         this.add(pSubmit,BorderLayout.CENTER);
+
+        bSubmit.addActionListener(new RecordListener());
+    }
+
+    public void updatePanel(){
+        cbModel = new CategoryComboBoxModel();
+        cbCategory.setModel(cbModel);
+        pInput.updateUI();
     }
 
     public static void main(String[] args) {

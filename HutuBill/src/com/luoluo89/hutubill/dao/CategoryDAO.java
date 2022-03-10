@@ -87,7 +87,7 @@ public class CategoryDAO {
         List<Category> categorys = new ArrayList<Category>();
 
 //        String sql = "select * from category order by id desc limit ?,? ";
-        String sql = "select DISTINCT c.id,c.name,(select count(*) from record where r.cid = c.id) from category as c LEFT JOIN record as r on c.id = r.cid order by c.id desc limit ?,? ";
+        String sql = "select c.id,c.name,count(r.id) from category as c LEFT JOIN record as r on c.id = r.cid GROUP BY c.id order by c.id asc limit ?,? ";
         try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
             ps.setInt(1, start);
             ps.setInt(2, count);

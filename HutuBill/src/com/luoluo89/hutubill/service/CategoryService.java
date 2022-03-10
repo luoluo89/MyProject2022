@@ -45,6 +45,7 @@ public class CategoryService {
                 cs.remove(category);
             }
         }*/
+
         dao.delete(id);
     }
 

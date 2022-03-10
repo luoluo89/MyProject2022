@@ -12,9 +12,12 @@ public class ToolBarListener implements ActionListener {
         MainPanel mainPanel = MainPanel.instance;
         JButton button = (JButton) e.getSource();
         if (button.equals(mainPanel.bSpend)) {
+            SpendPanel.instance.updateData();
             mainPanel.workingPanel.show(SpendPanel.instance);
         }else if(button.equals(mainPanel.bRecord)) {
             mainPanel.workingPanel.show(RecordPanel.instance);
+        }else if(button.equals(mainPanel.bRecord_history)) {
+            mainPanel.workingPanel.show(RecordHistoryPanel.instance);
         }
         else if(button.equals(mainPanel.bCategory)) {
             mainPanel.workingPanel.show(CategoryPanel.instance);
@@ -30,6 +33,9 @@ public class ToolBarListener implements ActionListener {
         }
         else if(button.equals(mainPanel.bRecover)) {
             mainPanel.workingPanel.show(RecoverPanel.instance);
+        }
+        else if(button.equals(RecordHistoryPanel.instance.bAdd)) {
+            mainPanel.workingPanel.show(RecordPanel.instance);
         }
         else{
             mainPanel.workingPanel.show(SpendPanel.instance);

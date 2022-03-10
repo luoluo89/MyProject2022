@@ -9,8 +9,8 @@ public class DBUtil {
     static int port = 3306;
     static String database = "hutubill";
     static String encoding = "UTF-8";
-    static String loginName = "root";
-    static String password = "root";
+    public static String loginName = "root";
+    public static String password = "root";
 
     static {
         try {

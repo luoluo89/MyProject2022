@@ -1,7 +1,7 @@
 package com.luoluo89.hutubill.entity;
 
 /**
- *消费分类实体
+ * 消费分类实体
  */
 public class Category {
 
@@ -31,5 +31,10 @@ public class Category {
 
     public void setRecordNumber(int recordNumber) {
         this.recordNumber = recordNumber;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

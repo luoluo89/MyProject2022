@@ -1,55 +1,56 @@
 package com.luoluo89.hutubill.model;
 
+import com.luoluo89.hutubill.entity.Category;
+import com.luoluo89.hutubill.service.CategoryService;
+
 import java.util.ArrayList;
 import java.util.List;
- 
+
 import javax.swing.ComboBoxModel;
 import javax.swing.event.ListDataListener;
- 
-public class CategoryComboBoxModel implements ComboBoxModel<String>{
-    public List<String> cs = new ArrayList<>();
-     
-    String c;
-    public CategoryComboBoxModel(){
-        cs.add("餐饮");
-        cs.add("交通");
-        cs.add("住宿");
-        cs.add("话费");
+
+public class CategoryComboBoxModel implements ComboBoxModel<Category> {
+    public List<Category> cs = new ArrayList<>();
+
+    Category c;
+
+    public CategoryComboBoxModel() {
+        CategoryService categoryService = new CategoryService();
+        cs = categoryService.list();
         c = cs.get(0);
     }
-     
+
     @Override
     public int getSize() {
         return cs.size();
     }
- 
+
     @Override
-    public String getElementAt(int index) {
+    public Category getElementAt(int index) {
         return cs.get(index);
     }
- 
+
     @Override
     public void addListDataListener(ListDataListener l) {
         // TODO Auto-generated method stub
-         
+
     }
- 
+
     @Override
     public void removeListDataListener(ListDataListener l) {
         // TODO Auto-generated method stub
-         
+
     }
- 
+
     @Override
     public void setSelectedItem(Object anItem) {
-        c = (String) anItem;
-         
+        c = (Category) anItem;
+
     }
- 
+
     @Override
     public Object getSelectedItem() {
-        // TODO Auto-generated method stub
         return c;
     }
- 
+
 }
