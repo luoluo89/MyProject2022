@@ -3,6 +3,7 @@ package com.luoluo89.hutubill.panel;
 import com.luoluo89.hutubill.entity.Category;
 import com.luoluo89.hutubill.entity.Record;
 import com.luoluo89.hutubill.listener.CategoryListener;
+import com.luoluo89.hutubill.listener.RecordHistoryListener;
 import com.luoluo89.hutubill.listener.ToolBarListener;
 import com.luoluo89.hutubill.model.CategoryTableModel;
 import com.luoluo89.hutubill.model.RecordTableModel;
@@ -38,9 +39,9 @@ public class RecordHistoryPanel extends JPanel {
         this.setLayout(new BorderLayout());
         this.add(sp,BorderLayout.CENTER);
         this.add(pSubmit,BorderLayout.SOUTH);
-        bAdd.addActionListener(new ToolBarListener());
-        bEdit.addActionListener(new CategoryListener());
-        bDelete.addActionListener(new CategoryListener());
+        bAdd.addActionListener(new RecordHistoryListener());
+        bEdit.addActionListener(new RecordHistoryListener());
+        bDelete.addActionListener(new RecordHistoryListener());
     }
 
     public Record getSelectedRecord(int selectrow){
