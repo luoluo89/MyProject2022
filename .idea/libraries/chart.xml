@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="chart">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/HutuBill/lib/chart.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HutuBill/lib/liquidlnf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
