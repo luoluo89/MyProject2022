@@ -12,7 +12,7 @@ import cn.hutool.core.lang.Console;
 public class TestWatchMonitor {
 
 	public static void main(String[] args) {
-		File file = FileUtil.file("F:/game");
+		File file = FileUtil.file("E:/code");
 		//这里只监听文件或目录的修改事件
 		WatchMonitor watchMonitor = WatchMonitor.create(file, WatchMonitor.EVENTS_ALL);
 		watchMonitor.setWatcher(new Watcher(){
