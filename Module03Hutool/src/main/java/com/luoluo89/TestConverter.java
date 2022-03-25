@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
 import java.lang.reflect.Method;
 import java.util.List;
 
+import cn.hutool.core.text.UnicodeUtil;
 import org.junit.Test;
 
 import cn.hutool.core.convert.Convert;
@@ -28,12 +29,12 @@ public class TestConverter {
 
 		int[] b = {1,2,3,4,5};
 		String bStr = Convert.toStr(b);
-		
+
 		Object c = null;
 		String cStr = Convert.toStr(c,"空字符串(默认值)");
 
 		p("整数", a, "字符串" , aStr);
-		p("long数组", b, "字符串" , bStr);	
+		p("int数组", b, "字符串" , bStr);
 		p("空对象", c, "字符串" , cStr);	
 		
 		
@@ -81,10 +82,12 @@ public class TestConverter {
 	public void test6() {
 		String a = "how2j的Hutool教程";
 		String unicode = Convert.strToUnicode(a);
+		String unicode2 = UnicodeUtil.toUnicode(a);
 		String b = Convert.unicodeToStr(unicode);	
 		
 		p("字符串", a, "unicode" , unicode);	
-		p("unicode", unicode, "字符串" , b);	
+		p("字符串", a, "unicode2" , unicode2);
+		p("unicode", unicode, "字符串" , b);
 		
 	}
 	@Test
@@ -93,7 +96,7 @@ public class TestConverter {
 		String a = "how2j的Hutool教程";
 		//转换后result为乱码
 		String b = Convert.convertCharset(a, CharsetUtil.UTF_8, CharsetUtil.ISO_8859_1);
-		String c = Convert.convertCharset(b, CharsetUtil.ISO_8859_1, "UTF-8");
+		String c = Convert.convertCharset(b, CharsetUtil.ISO_8859_1, CharsetUtil.UTF_8);
 		
 		p("UTF-8", a, "IOS-8859-1" , b);	
 		p("IOS-8859-1", b, "UTF-8" , c);	
@@ -111,14 +114,12 @@ public class TestConverter {
 	@Comment("原始类和包装类转换")
 	public void test9() {
 		Class<?> wrapClass = Integer.class;
-
 		Class<?> unWraped = Convert.unWrap(wrapClass);
-
 		Class<?> primitiveClass = long.class;
 
 		Class<?> wraped = Convert.wrap(primitiveClass);
 		p("包装类型", wrapClass, "原始类型" , unWraped);	
-		p("原始类型", primitiveClass, "wraped" , wraped);	
+		p("原始类型", primitiveClass, "包装类型" , wraped);
 	}
 
 	private String preComment = null;	
