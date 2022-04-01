@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>标题1</h1>
+<br/>
+<br/>
+<br/>
+<h2 align="center">标题2前面有3个换行</h2>
+
+<p>这是一个水平线，有渲染效果，但是没有文本内容</p>
+<hr/>
+<p>无粗体效果</p>
+<b>b标签粗体效果</b>
+<br/>
+<strong>strong标签粗体效果</strong>
+<hr/>
+<p>无斜体效果</p>
+<i>使用 i 标签带来的斜体效果</i>
+<br/>
+<em>使用 em 标签带来的斜体效果</em>
+<hr/>
+<p>无效果</p>
+<strong>粗体</strong>
+<br/>
+<i>斜体</i>
+<br/>
+<strong><i>同时有粗体和斜体</i></strong>
+<hr/>
+<strong>这里是没有用预格式的情况：</strong>
+<br/>
+public class HelloWorld {
+public static void main(String[] args) {
+System.out.println("Hello World");
+}
+}
+<br/>
+<br/>
+<hr/>
+<strong>使用预格式的情况:</strong>
+<pre>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+</pre>
+<hr/>
+<p>无删除效果</p>
+<del>使用del标签实现的删除效果</del>
+<br/>
+<s>使用s标签实现的删除效果，但是不建议使用，因为很多浏览器不支持s标签</s>
+<hr/>
+<ins>使用ins标签实现的下划线效果</ins>
+<br/>
+<u>使用u标签实现的下划线效果，但是不建议使用</u>
+<hr/>
+<div align="left">
+    <img width="270" height="129" src="baidu.png" alt="这个是一个图片"/>
+</div>
+<hr/>
+<a href="https://www.baidu.com/" target="_blank" title="内事不知问度娘">百度一下</a>
+<hr/>
+<a href="https://www.baidu.com/" target="_blank" title="内事不知问度娘">
+    <div align="center">
+        <img width="270" height="129" src="baidu.png" alt="百度一下"/>
+    </div>
+</a>
+<hr/>
+<table border="1" width="200px">
+    <tr>
+        <td align="center" valign="middle">1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" valign="middle">3,4</td>
+    </tr>
+    <tr>
+        <td>a</td>
+        <td bgcolor="pink">b</td>
+    </tr>
+</table>
+<hr/>
+<div style="margin-left:50px">
+    div是块元素，即自动换行
+    常见的块元素还有h1,table,p
+</div>
+<br/>
+<span style="margin-left:50px; color: PaleTurquoise; font-size: large">
+    span是内联元素，即不会换行
+    常见的内联元素还有img,a,b,strong
+</span>
+<hr/>
+用户名：<input type="text" value="input文本框,只能够输入一行 不需要写成<input />或者<input></input> 这样的">
+<br/>
+密  码：<input type="password">
+<hr/>
+<p>今天晚上做什么？</p>
+学习java<input type="radio" name="activity" value="学习java" > <br/>
+东京热<input type="radio" checked="checked"  name="activity" value="tokyohot" > <br/>
+dota<input type="radio" name="activity" value="dota" > <br/>
+LOL<input type="radio" name="activity"  value="lol"> <br/>
+<hr/>
+<p>今天晚上做什么？</p>
+学习java<input type="checkbox" value="学习java" > <br/>
+东京热<input type="checkbox" checked="checked"  name="activity" value="tokyohot" > <br/>
+dota<input type="checkbox" value="dota" > <br/>
+LOL<input type="checkbox" value="lol"> <br/>
+<hr/>
+<div align="center">
+    <select>
+        <option>汉堡包</option>
+        <option>鸡腿</option>
+        <option>年糕</option>
+        <option>薯条</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;
+    <select size="2">
+        <option>汉堡包</option>
+        <option>鸡腿</option>
+        <option>年糕</option>
+        <option>薯条</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;
+    <select multiple="multiple"  size="3"><!-- multiple可以多选，按住ctrl或者shift就可以多选 -->
+        <option selected="selected">汉堡包</option><!-- selected默认属性 -->
+        <option>鸡腿</option>
+        <option>年糕</option>
+        <option>薯条</option>
+    </select>
+</div>
+<hr/>
+<textarea cols="30" rows="8">123456789012345678901234567890
+1234567890
+1234567890
+1234567890
+1234567890
+1234567890
+1234567890
+1234567890</textarea>
+</body>
+</html>
