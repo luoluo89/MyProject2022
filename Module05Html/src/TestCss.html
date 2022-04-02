@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS样式</title>
+</head>
+<body>
+<style>
+    p {
+        color: red;
+    }
+
+    #id1 {
+        color: aqua;
+    }
+
+    .class1 {
+        color: blue;
+    }
+
+    p#percentage {
+        width: 50%;
+        height: 50%;
+        background-color: pink;
+    }
+
+    p#pix {
+        width: 180px;
+        height: 50px;
+        background-color: green;
+    }
+
+    p.gray {
+        background-color: gray;
+    }
+
+    h1 {
+        background-color: transparent
+    }
+
+    h2 {
+        background-color: rgb(250, 0, 255)
+    }
+
+    h3 {
+        background-color: #00ff00
+    }
+    div#left {
+        text-align: left;
+    }
+
+    /*让div和span的边框显露出来，便于理解本知识点*/
+    div, span {
+        border: 1px gray solid;
+        margin: 10px;
+    }
+
+    div#center {
+        text-align: center;
+    }
+
+    div.right {
+        text-align: right;
+    }
+    span.right {
+        text-align: right;
+    }
+</style>
+<p>元素选择器</p>
+<p id="id1">ID选择器</p>
+<p class="class1">类选择器</p>
+<p id="percentage"> 按比例设置尺寸50%宽 50%高</p>
+<p id="pix"> 按象素设置尺寸 180px宽 50 px高</p>
+<p class="gray">灰色</p>
+<h1>透明背景，默认即透明背景</h1>
+<h2>紫色</h2>
+<h3>绿色背景</h3>
+<div id="left">
+    左对齐
+</div>
+<div class="right">
+    右对齐
+</div>
+<div id="center">
+    居中
+</div>
+<span class="right">
+span看不出右对齐效果
+</span>
+</body>
+</html>
