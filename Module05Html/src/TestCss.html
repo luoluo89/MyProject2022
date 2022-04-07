@@ -70,21 +70,133 @@
 
     h1#id2 {
         text-decoration: overline;
-        line-height:200%;
+        line-height: 200%;
     }
 
     h2#id3 {
         text-decoration: line-through;
-        line-height:200%;
+        line-height: 200%;
     }
 
     h3#id4 {
         text-decoration: underline;
-        line-height:200%;
+        line-height: 200%;
         letter-spacing: 2px;
-        text-indent:50px;
+        text-indent: 50px;
     }
 
+    p.normal {
+        white-space: normal;
+        font-style: normal;
+    }
+
+    p.pre {
+        white-space: pre;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    p.pre-wrap {
+        white-space: pre-wrap;
+        font-size: 50%;
+    }
+
+    p.nowrap {
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    p.f1 {
+        font-family: "Times New Roman";
+    }
+
+    p.f2 {
+        font-family: Arial;
+    }
+
+    p.f3 {
+        font-family: 宋体;
+    }
+
+    p.f4 {
+        font-family: 黑体;
+    }
+
+    p.f5 {
+        font-family: 楷体;
+    }
+
+    p.f6 {
+        font-family: 微软雅黑;
+    }
+
+    span.a {
+        cursor: crosshair;
+    }
+
+    span.b {
+        cursor: default;
+    }
+
+    span.c {
+        cursor: auto;
+    }
+
+    span.d {
+        cursor: pointer;
+    }
+
+    span.e {
+        cursor: e-resize;
+    }
+
+    span.f {
+        cursor: ne-resize;
+    }
+
+    span.g {
+        cursor: nw-resize;
+    }
+
+    span.h {
+        cursor: n-resize;
+    }
+
+    span.i {
+        cursor: se-resize;
+    }
+
+    span.j {
+        cursor: sw-resize;
+    }
+
+    span.k {
+        cursor: w-resize;
+    }
+
+    span.l {
+        cursor: text;
+    }
+
+    span.m {
+        cursor: help;
+    }
+
+    span.n {
+        cursor: wait;
+    }
+
+    span.o {
+        cursor: not-allowed;
+    }
+    table.table1{
+        table-layout: auto;
+        border-collapse: separate;
+    }
+    table.table2{
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
 </style>
 <p>元素选择器</p>
 <p id="id1">ID选择器</p>
@@ -110,5 +222,70 @@ span看不出右对齐效果
 <h1 id="id2">上划线</h1>
 <h2 id="id3">删除效果</h2>
 <h3 id="id4">下划线，行间距，字符间距，首行缩进</h3>
+<p class="normal">
+    在默认情况下，多个 空白格或者
+    换行符
+
+    会被 合并成一个空白格
+</p>
+
+<p class="pre">
+    保留所有的 空白格
+    以及换行符
+    pre 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器也不会换行。
+    特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字
+</p>
+
+<p class="pre-wrap">
+    保留所有的 空白格
+    以及换行符
+    pre-wrap 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器，会换行。
+    特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字
+</p>
+
+<p class="nowrap">
+    不会换行
+    不会换行
+    不会换行
+    直到br<br/>才换行
+</p>
+<p>默认字库 font family:default </p>
+<p class="f1">设置字库 font-family: Times New Roman</p>
+<p class="f2">设置字库 font-family: Arial</p>
+<p class="f3">设置字库 font-family: 宋体, 这种字体是IE默认字体</p>
+<p class="f4">设置字库 font-family: 黑体</p>
+<p class="f5">设置字库 font-family: 楷体</p>
+<p class="f6">设置字库 font-family: 微软雅黑, 这个字体是火狐默认字体</p>
+<span class="a">鼠标移动到这段文字上，就看到鼠标样式变成了十字架</span><br/>
+<span class="b">鼠标移动到这段文字上，就看到鼠标样式变成了箭头</span><br/>
+<span class="c">鼠标移动到这段文字上，就看到鼠标样式变成了I</span><br/>
+<span class="d">鼠标移动到这段文字上，就看到鼠标样式变成了手势</span><br/>
+<span class="e">鼠标移动到这段文字上，就看到鼠标样式变成了水平箭头</span><br/>
+<span class="f">鼠标移动到这段文字上，就看到鼠标样式变成了右斜杠箭头</span><br/>
+<span class="g">鼠标移动到这段文字上，就看到鼠标样式变成了左斜杠箭头</span><br/>
+<span class="h">鼠标移动到这段文字上，就看到鼠标样式变成了垂直箭头</span><br/>
+<span class="i">鼠标移动到这段文字上，就看到鼠标样式变成左斜杠箭头</span><br/>
+<span class="j">鼠标移动到这段文字上，就看到鼠标样式变成右斜杠箭头</span><br/>
+<span class="k">鼠标移动到这段文字上，就看到鼠标样式变成水平箭头</span><br/>
+<span class="l">鼠标移动到这段文字上，就看到鼠标样式变成了l</span><br/>
+<span class="m">鼠标移动到这段文字上，就看到鼠标样式变成了带问号</span><br/>
+<span class="n">鼠标移动到这段文字上，就看到鼠标样式变成了等待圈圈</span><br/>
+<span class="o">鼠标移动到这段文字上，就看到鼠标样式变成了箭头下面加问号</span><br/>
+<hr/>
+<table class="table1" border="2" width="100px">
+    <tr>
+        <td width="10%">abcdefghijklmnopqrstuvwxyz</td>
+        <td width="90%">abc</td>
+    </tr>
+</table>
+
+<table class="table2" border="2" width="100px">
+    <tr>
+        <td width="10%">abcdefghijklmnopqrstuvwxyz</td>
+        <td width="90%">abc</td>
+    </tr>
+</table>
+<hr/>
+<hr/>
 </body>
 </html>

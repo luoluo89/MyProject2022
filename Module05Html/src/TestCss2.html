@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS样式</title>
+</head>
+<body>
+<style>
+    div.normal {
+        border-style: none;
+    }
+
+    div.solid {
+        border-style: solid;
+        border-color: red;
+        border-width: 1px;
+    }
+
+    div.dotted {
+        border-style: dotted;
+        border-color: pink;
+        border-width: 2px;
+    }
+
+    div.dashed {
+        border-style: dashed;
+        border-color: blue;
+        border-width: 3px;
+    }
+
+    div.double {
+        border-style: double;
+        border-color: aqua;
+        border-width: 4px;
+    }
+
+    div.four {
+        border-top-style: solid;
+        border-top-color: red;
+        border-top-width: 50px;
+        border-left-style: solid;
+        border-left-color: blue;
+        border-left-width: 50px;
+        border-bottom-style: solid;
+        border-bottom-color: green;
+        border-bottom-width: 50px;
+        border-right-style: solid;
+        border-right-color: yellow;
+        border-right-width: 50px;
+    }
+
+    div.divclass {
+        border: 1px solid red;
+    }
+
+    span.spanclass {
+        border: 1px solid red;
+    }
+
+    table.table1 {
+        border-collapse: collapse;
+        width: 90%;
+    }
+
+    table.table1 tr.odd {
+        background-color: #f8f8f8;
+    }
+
+    table.table1 tr.head {
+        border-bottom-width: 2px;
+    }
+
+    table.table1 tr {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: lightgray;
+        height: 35px;
+    }
+
+    table.table1 td {
+        width: 25%;
+        text-align: center;
+    }
+
+    table.table2 {
+        width: 100%;
+    }
+
+    table.table2 td {
+        text-align: center;
+    }
+
+    table.table2 tr.rowborder td {
+        background-color: #b2d1ff;
+        border-right: 2px solid #fff;
+        height: 3px;
+    }
+
+    .red-normal {
+        border: 5px solid red;
+    }
+
+    .pad-left {
+        border: 5px solid red;
+        padding-left: 50px;
+    }
+
+    .pad-all {
+        border: 5px solid red;
+        padding: 50px;
+    }
+
+    .margin-left {
+        border: 5px solid grey;
+        margin-left: 50px;
+    }
+
+    div.other {
+        border: 1px solid gray;
+        font-size: 70%;
+    }
+
+    div.box {
+        border: 1px solid gray;
+        font-size: 70%;
+        width: 70px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    a.baidu
+    {
+        link: #FF0000;
+        visited:#00FF00;
+        hover:#FF00FF;
+        active:#0000FF;
+    }
+</style>
+<div class="normal"> 默认无边框div</div>
+<div class="solid"> 实线边框</div>
+<br/>
+<div class="dotted"> 点状边框</div>
+<br/>
+<div class="dashed"> 虚线边框</div>
+<br/>
+<div class="double"> 双线边框</div>
+<br/>
+<div class="four"> 特殊边框，四边可自定义</div>
+<br/>
+<div class="divclass"> 块级元素div默认是占用100%的宽度，常见的块级元素有div h1 p 等</div>
+<br/>
+<span class="spanclass"> 而内联元素span的宽度由其内容的宽度决定，常见的内联元素有 a b strong i input 等  </span><br/>
+<table class="table1">
+    <tr class="head">
+        <td>id</td>
+        <td>名称</td>
+        <td>血量</td>
+        <td>伤害</td>
+    </tr>
+    <tr class="odd">
+        <td>1</td>
+        <td>gareen</td>
+        <td>340</td>
+        <td>58</td>
+    </tr>
+    <tr class="even">
+        <td>2</td>
+        <td>teemo</td>
+        <td>320</td>
+        <td>76</td>
+    </tr>
+    <tr class="odd">
+        <td>3</td>
+        <td>annie</td>
+        <td>380</td>
+        <td>38</td>
+    </tr>
+    <tr class="even">
+        <td>4</td>
+        <td>deadbrother</td>
+        <td>400</td>
+        <td>90</td>
+    </tr>
+</table>
+<table class="table2">
+    <tr>
+        <td>商品</td>
+        <td>数量</td>
+        <td>价格</td>
+        <td>小记</td>
+    </tr>
+    <tr class="rowborder">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br/>
+<br/>
+<span class="red-normal"> 无内边距的span  </span><br/> <br/>
+<span class="pad-left"> 左内边距为50的span  </span><br/><br/><br/><br/><br/><br/>
+<span class="pad-all"> 上 右 下 左  内边距为50的span，依次赋值  </span><br/><br/><br/><br/><br/><br/><br/>
+<span class="margin-left"> 左外边距为50的span  </span><br/>
+<hr/>
+<hr/>
+<div class="other">
+    其他元素
+</div>
+<div class="box">
+    内容宽度70px <br><br>
+    内边距：5px <br> <br>
+    外边距：10px <br>
+</div>
+<div class="other">
+    其他元素
+</div>
+<hr/>
+<a class="baidu" href="http://www.baidu.com" target="_blank">超链的不同状态</a>
+</body>
+</html>
