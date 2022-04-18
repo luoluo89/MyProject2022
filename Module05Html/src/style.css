@@ -1,0 +1,47 @@
+div.d {
+    display: none;
+}
+
+div.v {
+    visibility: hidden;
+}
+.p1{
+    color:red;
+}
+.span1{
+    color:blue !important;
+}
+p.abs {
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+p.abs2{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+.absdiv{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    width:215px;
+    border: 1px solid blue;
+}
+p.aaaa{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    z-index: 1;
+}
+p.bbbb{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    z-index: 2;
+}
+p.r{
+    position: relative;
+    left: 100px;
+    top: 100px;
+}

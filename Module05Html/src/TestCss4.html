@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试CSS样式</title>
+</head>
+<body>
+<style>
+    div, span {
+        border: 1px solid black;
+        margin: 5px;
+    }
+
+    .span-div {
+        display: block;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .display-inline {
+        display: inline;
+    }
+
+    .inline-block {
+        display: inline-block;
+        border: 1px solid lightgray;
+        width: 100px;
+        height: 30px;
+        margin: 100px;
+    }
+
+    .left {
+        width: 200px;
+        float: left;
+        background-color: pink;
+    }
+
+    .right {
+        overflow: hidden;
+        background-color: lightskyblue;
+    }
+
+    #line-height {
+        line-height: 100px;
+    }
+
+    #duohang {
+        padding: 30px 0;
+    }
+
+    #picture {
+        display: table-cell;
+        vertical-align: middle;
+        height: 200px;
+    }
+
+    .left2 {
+        width: 200px;
+        float: left;
+        background-color: pink
+    }
+
+    .right2 {
+        width: 200px;
+        float: right;
+        background-color: pink
+    }
+
+    .center2 {
+        margin: 0 200px;
+        background-color: lightblue
+    }
+</style>
+<div>可见的div1</div>
+<div class="display-none">隐藏的div2,使用display:none隐藏</div>
+<div>可见的div3</div>
+<hr/>
+<div>普通的div块</div>
+<span>这是普通span</span> <span>这是普通span</span> <span>这是普通span</span>
+<span class="span-div">这是span,被改造成了块级元素,块级元素会自动在前面和后面加上换行，并且在其上的width和height也能够生效</span>
+<hr/>
+<span>普通span</span> <span>普通span普通span</span> <span>普通span</span>
+<div class="display-inline">这是div,被改造成了内联元素,内联元素前后没有换行，并且在其上的width和height也无效。其大小由其中的内容决定</div>
+<hr/>
+每个都能设置宽度 ，同时还能在同一行<br/>
+<span class="inline-block">盖伦</span>
+<span class="inline-block">蒙多医生</span>
+<span class="inline-block">奈德丽</span>
+<span class="inline-block">蒸汽机器人</span>
+<hr/>
+<div align="center">
+    通过设置属性align="center" 居中的内容
+</div>
+<div style="text-align:center">
+    通过样式style="text-align:center" 居中的内容
+</div>
+<hr/>
+<div class="left">左边固定宽度</div>
+<div class="right">右边自动填满</div>
+<hr/>
+<div id="line-height">line-height 适合单独一行垂直居中</div>
+<div id="duohang">多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容
+    多行内容
+    多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容
+</div>
+<div id="picture">
+    <img src="skill1.png">
+</div>
+<div class="left2">左边固定宽度</div>
+<div class="right2">左边固定宽度</div>
+<div class="center2">中间自适应</div>
+<div id="div1">
+    <div id="div2"> 无论蓝色div高度如何变化，绿色div都会贴在下面
+    </div>
+</div>
+</body>
+</html>
