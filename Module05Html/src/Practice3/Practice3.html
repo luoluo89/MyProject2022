@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>综合性练习3</title>
+    <style>
+        div.yidong {
+            margin: auto;
+            width: 700px;
+            height: 600px;
+            padding: 20px
+        }
+
+        div.background {
+            width: 610px;
+            height: 480px;
+            border: 2px solid lightblue;
+        }
+
+        span.biaoti {
+            display: block;
+            background-color: lightblue;
+            margin: 2px;
+            font-size: 15px;
+            font-weight: bold;
+            color: steelblue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        table {
+            /*border:1px solid red;*/
+            width: 100%;
+            border-bottom: 2px solid lightcyan;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        td {
+            height: 30px;
+            padding: 6px;
+            margin: 2px;
+        }
+
+        .pt_ziti {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        a.lj_ziti {
+            font-size: 11px;
+            letter-spacing: 1.5px;
+        }
+
+        td.background {
+            background-color: whitesmoke;
+            width: 370px;
+        }
+
+        input {
+            width: 120px;
+        }
+
+        td.one {
+            width: 20%
+        }
+
+        td.two {
+            width: 25%
+        }
+
+        td.thr {
+            width: 55%
+        }
+    </style>
+</head>
+<body>
+<div class="yidong">
+    <span class="pt_ziti red">请注意：带有“*”的项目必须填写</span>
+    <div class="background">
+        <span class="biaoti">填写您的用户名：</span>
+        <table class="a">
+            <tr>
+                <td class="pt_ziti one"><span color="red">*</span>通行证用户名：</td>
+                <td class="two">
+                    <input type="text" value="请输入用户名" onfocus="if(value=='请输入用户名') {value=''}"
+                                       onblur="if (value=='') {value='请输入用户名'}"
+                                       style="background-color:ghostwhite ; color:lightgray"/>
+                    <br/><a class="lj_ziti" href="#" ;>查看用户名是否被占用</a>
+                </td>
+                <td class="pt_ziti background thr">用户名由a~z的英文字母（不区分大小写）、0~9的数字、<b>点、减号</b>或<b>下划线</b>组成，长度为3~18个字符，只能以数字或者字母开头和结尾，例如：kyzy_001.
+                </td>
+            </tr>
+        </table>
+        <span class="biaoti">请填写安全设置：<span style="font-size:small; font-weight:normal">（安全设置用于验证帐号和找回密码）</span></span>
+        <span class="pt_ziti red">以下信息对保证您帐号的安全极为重要，请您务必认真填写.</span>
+        <table>
+            <tr>
+                <td class="pt_ziti one"><span class="red">*</span>输入登录密码：</td>
+                <td class="two">
+                    <input type="text" style=" background-color:ghostwhite" ;>
+                </td>
+                <td class="pt_ziti background thr" rowspan="2">
+                    密码长度为6~16位，区分字母大小写，登录密码可以由字母、数字、特殊字符组成.
+                    【<a class="lj_ziti" href="#";>更多说明</a>】
+                </td>
+            </tr>
+            <tr>
+                <td class="pt_ziti one"><span class="red">*</span>登录密码确认：</td>
+                <td class="two">
+                    <input type="text" style=" background-color:ghostwhite" ;>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="pt_ziti one"><span class="red">*</span>密码提示问题：</td>
+                <td class="two">
+                    <input type="text" style=" background-color:ghostwhite" ;>
+                </td>
+                <td rowspan="2" class="pt_ziti background thr">当您忘记密码时可以由找回密码.例如，问题是“我的哥哥是谁”，答案为“peter2”.问题长度<b>不大于36</b>个字符，一个汉子占两个字符，答案长度在6~30位之间，区分大小写.
+                    【<a class="lj_ziti" href="#">更多说明</a>】
+                </td>
+            </tr>
+            <tr>
+                <td class="pt_ziti one"><span class="red">*</span>密码提示答案：</td>
+                <td class="two">
+                    <input type="text" style=" background-color:ghostwhite" ;>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="pt_ziti one"><span class="red">*</span>输入安全码：</td>
+                <td class="two">
+                    <input type="text" style=" background-color:ghostwhite" ;>
+                </td>
+                <td rowspan="2" class="pt_ziti background thr">安全码时您找回密码的重要途径，安全码长度为6~16位，区分字母大小写，由字母，数字特殊字符组成.
+                    <span class="red">特别提醒：安全码一旦设定，将不可自行修改.</span>
+                    【<a class="lj_ziti" href="#">更多说明</a>】
+                </td>
+            </tr>
+            <tr>
+                <td class="pt_ziti one"><span class="red">*</span>安全码确认：</td>
+                <td class="two">
+                    <input type="text" style=" background-color:ghostwhite" ;>
+                </td>
+            </tr>
+        </table>
+        <div align="center" ><input style="margin:10px;" type="button" value="提 交 表 单"/></div>
+    </div>
+</div>
+</body>
+</html>
