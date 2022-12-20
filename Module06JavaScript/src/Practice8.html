@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JAVASCRIPT 设计自定义对象</title>
+    <script>
+        function Hero(name){
+            this.name = name;
+            this.kill = function(){
+                document.write(this.name + "正在杀敌<br>");
+            }
+        }
+
+        var gareen = new Hero("盖伦");
+        gareen.kill();
+
+        var teemo = new Hero("提莫");
+        teemo.kill();
+
+        Hero.prototype.ken  g = function(){
+            document.write(this.name + "正在坑队友<br>");
+        }
+
+        gareen.keng();
+        teemo.keng();
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

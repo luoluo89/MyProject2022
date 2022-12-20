@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取元素节点</title>
+</head>
+<body>
+    <div id="d1">hello HTML DOM</div>
+    <div >hello javascript</div>
+    <div >hello BOM</div>
+    <div >hello DOM</div>
+    <h1  class="d" >hello javascript</h1>
+    <h2  class="d" >hello BOM</h2>
+    <div  class="d" >hello DOM</div>
+</body>
+<script>
+    var div1 = document.getElementById("d1");
+    document.write(div1);
+
+    var  divs = document.getElementsByTagName("div");
+    for(i=0;i<divs.length;i++){
+        document.write(divs[i]);
+        document.write("<br>");
+    }
+
+    var  elements= document.getElementsByClassName("d");
+    for(i=0;i<elements.length;i++){
+        document.write(elements[i]);
+        document.write("<br>");
+    }
+</script>
+</html>
